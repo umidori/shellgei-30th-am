@@ -296,15 +296,23 @@
 				<section data-markdown>
 					### ルックアラウンドアサーション
 					* 先読みアサーション
-						* 書式
-							* (?=PATTERN) - 肯定の先読み
-							* (?!PATTERN) - 否定の先読み
-						* 任意のPATTENを指定可能
 					* 後読みアサーション
-						* 書式
-							* (?<=PATTERN) - 肯定の後読み
-							* (?<\!PATTEN) -  否定の後読み
-						* 固定幅のPATTENしか指定できない
+				</section>
+				<section data-markdown>
+					### 先読みアサーション
+					* 書式
+						* (?=PATTERN) - 肯定の先読み
+						* (?!PATTERN) - 否定の先読み
+					* PATTENの直前に0幅マッチする
+					* 任意のPATTENを指定可能
+				</section>
+				<section data-markdown>
+					### 後読みアサーション
+					* 書式
+					 	* (?<=PATTERN) - 肯定の後読み
+						* (?<\!PATTEN) -  否定の後読み
+					* PATTENの直後に0幅マッチする
+					* 固定幅のPATTENしか指定できない
 				</section>
 				<section data-markdown>
 					### 先後読みアサーションの例
